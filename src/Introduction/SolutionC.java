@@ -14,7 +14,6 @@ public class SolutionC {
         }
         else{
             ans = "Not Weird";
-
         }
         System.out.println(ans);
 
