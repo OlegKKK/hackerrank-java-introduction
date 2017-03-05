@@ -5,19 +5,14 @@ import java.util.*;
 public class SolutionA {
 
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String a = in.next();
+        String b = in.next();
+        int sum = a.length() + b.length();
 
-        Scanner sc=new Scanner(System.in);
-        String A=sc.next();
-        String B=sc.next();
-
-        int length = A.length() + B.length();
-        System.out.println(length);
-        if(A.compareTo(B)==1){
-            System.out.println("yes");
-        }else{
-            System.out.println("No");
-        }
-        String output = A.substring(0, 1).toUpperCase() + A.substring(1) + " "+B.substring(0, 1).toUpperCase() + B.substring(1);
-        System.out.println(output);
+        System.out.println(sum);
+        System.out.println(a.compareToIgnoreCase(b) > 0 ? "Yes" : "No");
+        System.out.print(Character.toString(a.charAt(0)).toUpperCase() + a.substring(1) + " "
+                + Character.toString(b.charAt(0)).toUpperCase() + b.substring(1));
     }
 }
