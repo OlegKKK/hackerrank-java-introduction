@@ -1,2 +1,2 @@
-# hackerrank-java-introduction
+# hackerrank java introduction
 Hackerrank Java Introduction
